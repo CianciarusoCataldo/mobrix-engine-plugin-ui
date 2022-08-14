@@ -15,24 +15,6 @@ Manage ui properties with [MoBrix-engine system](https://github.com/CianciarusoC
 
 ---
 
-## Summary
-
-- [Getting started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [API](#api)
-  - [Config](#config)
-  - [Actions](#actions)
-  - [Selectors](#selectors)
-- [Integration with other plugins](#integration-with-other-plugins)
-- [Included libraries](#included-libraries)
-- [Authors](#authors)
-- [License](#license)
-
-<br>
-
----
-
 ## Getting started
 
 <br>

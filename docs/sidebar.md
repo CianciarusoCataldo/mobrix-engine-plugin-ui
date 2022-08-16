@@ -7,3 +7,4 @@
 - [MoBrix-engine](https://github.com/cianciarusocataldo/mobrix-engine)
 - [MoBrix-ui](https://github.com/cianciarusocataldo/mobrix-ui)
 - [MoBrix-designer](https://github.com/cianciarusocataldo/mobrix-designer)
+- [MoBrix-engine-plugins](https://github.com/cianciarusocataldo/mobrix-engine-plugins)

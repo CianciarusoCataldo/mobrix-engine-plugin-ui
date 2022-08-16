@@ -21,9 +21,9 @@ import { createMoBrixEnginePlugin } from "mobrix-engine-tools";
  *
  * @returns `ui` plugin
  *
- * @example <caption> Use mobrix-engine-plugin-ui with mobrix-engine config</caption>
+ * @example <caption> Usage with MoBrix-engine config</caption>
  *
- * //into mobrix-engine config file
+ * //into MoBrix-engine config file
  *
  * const uiPlugin = require("mobrix-engine-plugin-ui");
  *
@@ -37,8 +37,6 @@ import { createMoBrixEnginePlugin } from "mobrix-engine-tools";
  * };
  *
  * module.exports = { config };
- * ``
- *
  *
  * @see https://cianciarusocataldo.github.io/mobrix-engine-plugin-ui
  * @see https://cianciarusocataldo.github.io/mobrix-engine
@@ -47,7 +45,7 @@ import { createMoBrixEnginePlugin } from "mobrix-engine-tools";
  *
  * @copyright Cataldo Cianciaruso 2022
  */
-const uiPlugin: UiPlugin = createMoBrixEnginePlugin("ui", () => ({
+const uiPlugin: UiPlugin = createMoBrixEnginePlugin("mobrix-engine-ui", () => ({
   field: (config) => {
     const uiConfig = config.ui || {};
     return {
@@ -81,7 +79,7 @@ const uiPlugin: UiPlugin = createMoBrixEnginePlugin("ui", () => ({
   },
   designerInteractions: [
     {
-      plugin: "forms",
+      plugin: "mobrix-designer-forms",
       effect: (field, config) => {
         field.getDarkMode = isInDarkMode;
 
@@ -89,7 +87,7 @@ const uiPlugin: UiPlugin = createMoBrixEnginePlugin("ui", () => ({
       },
     },
     {
-      plugin: "drawer",
+      plugin: "mobrix-designer-drawer",
       effect: (field, config) => {
         field.getDarkMode = isInDarkMode;
         field.onClose =
@@ -101,7 +99,7 @@ const uiPlugin: UiPlugin = createMoBrixEnginePlugin("ui", () => ({
   ],
   interactions: [
     {
-      plugin: "urlChecker",
+      plugin: "mobrix-engine-url-checker",
       effect: (field, config) => {
         field.queryParameters["dark"] = ({ config: paramConfig, urlParam }) => {
           let queryValue: boolean | null = null;

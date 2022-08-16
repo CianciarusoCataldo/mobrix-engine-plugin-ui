@@ -1,6 +1,6 @@
 {
   "name": "mobrix-engine-plugin-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage ui properties with MoBrix-engine system",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",

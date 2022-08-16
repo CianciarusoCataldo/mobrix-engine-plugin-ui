@@ -160,7 +160,7 @@ const customPlugin = () => ({
 
   interactions: [
     {
-      plugin: "ui",
+      plugin: "mobrix-engine-ui",
       effect: (uiConfig) => {
         // Custom plugin stuffs
 
